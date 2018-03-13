@@ -1,5 +1,5 @@
 <script language="Javascript">
-  Stripe.setPublishableKey("<%= EVN['STRIPE_TEST_PUBLISHABLE_KEY'] %>");
+  Stripe.setPublishableKey("<%= ENV['STRIPE_TEST_PUBLISHABLE_KEY'] %>");
 </script>
 
 <%= bootstrap_devise_error_messages! %>
